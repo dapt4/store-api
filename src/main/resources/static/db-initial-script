@@ -1,0 +1,16 @@
+CREATE TABLE Stores (
+	id INT PRIMARY KEY,
+	market VARCHAR ( 30 ) UNIQUE NOT NULL,
+	description VARCHAR ( 250 ) NOT NULL,
+	badge INT NOT NULL,
+	distance NUMERIC ( 10 ) NOT NULL,
+	product VARCHAR ( 30 ) NOT NULL,
+	rated INT NOT NULL,
+	productsFind INT NOT NULL,
+	productsTotal INT NOT NULL,
+	price INT NOT NULL,
+	itemsCart INT NOT NULL
+);
+
+insert into Stores (	id,	market,	description, badge,	distance ,	product ,	rated ,	productsFind ,	productsTotal ,	price ,	itemsCart, image)
+values (1,'decandido','donde comprar es una pega', 1, 3, 'pan frances', 5, 3,6, 7,3, "soy una url o uri");

@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "1e996da1-271e-4630-b4ee-cc50d72431ad",
+		"name": "StoreApi-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"market\": \"Mimarket\",\n    \"description\": \"a wonderfull market\",\n    \"badge\": 1,\n    \"distance\": 2.0,\n    \"product\": \"leather wallet\",\n    \"rated\": 1,\n    \"productsFind\": 1,\n    \"productsTotal\": 1,\n    \"price\": 26.0,\n    \"itemsCart\": 1,\n    \"image\": \"https://images-na.ssl-images-amazon.com/images/I/41zwgplI2VL._AC_SY400_.jpg\"\n}"
+				},
+				"url": {
+					"raw": "https://all-store-api.herokuapp.com/stores",
+					"protocol": "https",
+					"host": [
+						"all-store-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"stores"
+					]
+				},
+				"description": "for create Stores"
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://all-store-api.herokuapp.com/stores/10",
+					"protocol": "https",
+					"host": [
+						"all-store-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"stores",
+						"10"
+					]
+				},
+				"description": "for read a Store"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 10,\n        \"market\": \"Mimarket\",\n        \"description\": \"a wonderfull market\",\n        \"badge\": 1,\n        \"distance\": 2.0,\n        \"product\": \"leather wallet\",\n        \"rated\": 1,\n        \"productsFind\": 1,\n        \"productsTotal\": 1,\n        \"price\": 26.0,\n        \"itemsCart\": 1,\n        \"image\": \"https://images-na.ssl-images-amazon.com/images/I/41zwgplI2VL._AC_SY400_.jpg\"\n    }"
+				},
+				"url": {
+					"raw": "https://all-store-api.herokuapp.com/stores/10",
+					"protocol": "https",
+					"host": [
+						"all-store-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"stores",
+						"10"
+					]
+				},
+				"description": "for update 1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://all-store-api.herokuapp.com/stores/10",
+					"protocol": "https",
+					"host": [
+						"all-store-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"stores",
+						"10"
+					]
+				},
+				"description": "for delete a Store"
+			},
+			"response": []
+		},
+		{
+			"name": "ReadAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://all-store-api.herokuapp.com/stores",
+					"protocol": "https",
+					"host": [
+						"all-store-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"stores"
+					]
+				},
+				"description": "for read all info"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAll",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://all-store-api.herokuapp.com/stores/all/19570744dapt4all$",
+					"protocol": "https",
+					"host": [
+						"all-store-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"stores",
+						"all",
+						"19570744dapt4all$"
+					]
+				},
+				"description": "for delete all data"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
